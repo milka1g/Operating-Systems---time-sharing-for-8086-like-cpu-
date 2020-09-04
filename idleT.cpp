@@ -19,7 +19,7 @@ void idleThread::run(){
 
 void idleThread::start(){
 	if(myPCB->status == NEW){
-		myPCB->status == READY; //bilo blocked
+		myPCB->status = READY;
 		myPCB->initStack();
 	}
 
